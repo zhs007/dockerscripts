@@ -4,4 +4,4 @@ docker run -d \
     -p 3777:3777 \
     --name tc2serv \
     -v $PWD/cfg:/app/tr2/cfg \
-    tradingcore2
+    zerrozhao/tradingcore2
