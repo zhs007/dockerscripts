@@ -42,3 +42,9 @@ servs:
 ``` sh
 sh start.sh
 ```
+
+### Stop & Delete
+
+``` sh
+sh stop.sh
+```
