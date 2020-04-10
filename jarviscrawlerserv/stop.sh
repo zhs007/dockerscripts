@@ -1,0 +1,2 @@
+docker container stop jarviscrawlerserv
+docker container rm jarviscrawlerserv

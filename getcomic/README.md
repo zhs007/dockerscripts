@@ -1,4 +1,4 @@
-# Docker for tradingcore2 
+# Docker for GetComic 
 
 ### Install
 
