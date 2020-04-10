@@ -14,7 +14,12 @@ sh pull.sh
 
 ### Configuration
 
- The default configuration file is ``cfg/config.yaml`` .
+The default configuration file is ``cfg/config.yaml`` .  
+Before starting for the first time, you need to copy and rename the example configuration file.  
+
+``` sh
+cp cfg/config.yaml.default cfg/config.yaml
+```
 
 
 ``` yaml
