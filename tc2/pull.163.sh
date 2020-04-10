@@ -1,1 +1,1 @@
-docker pull hub-mirror.c.163.com/zerrozhao/tradingcore2
+docker pull https://hub-mirror.c.163.com/zerrozhao/tradingcore2
