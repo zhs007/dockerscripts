@@ -8,3 +8,4 @@
 - [getcomic](https://github.com/zhs007/dockerscripts/tree/master/getcomic): 这是 [getcomic](https://github.com/zhs007/getcomic) 服务的快速部署脚本。
 - [jarviscrawlerserv](https://github.com/zhs007/dockerscripts/tree/master/jarviscrawlerserv): 这是 [jarviscrawlercore](https://github.com/zhs007/jarviscrawlercore) 服务的快速部署脚本。
 - [letsencrypt](https://github.com/zhs007/dockerscripts/tree/master/letsencrypt): 这是 ``Let's Encrypt`` 服务的快速部署脚本，免费做ssl签名的。
+- [nginx](https://github.com/zhs007/dockerscripts/tree/master/nginx): 这是 ``nginx`` 服务的快速部署脚本。
