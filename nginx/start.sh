@@ -8,4 +8,5 @@ docker run \
   --name nginx \
   --volume $PWD/conf:/etc/nginx \
   --volume /etc/letsencrypt:/etc/letsencrypt \
+  --volume $PWD/html:/usr/share/nginx/html \
   nginx
