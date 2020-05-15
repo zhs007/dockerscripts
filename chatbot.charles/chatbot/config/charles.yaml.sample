@@ -1,0 +1,45 @@
+# log configuration
+log:
+  # root path
+  path: ./logs
+  # level
+  level: debug
+  # log to console
+  console: true
+
+# service configuration
+serv:
+  # bindaddr - bind addr
+  bindaddr: 0.0.0.0:7205
+
+tokens:
+  - uiPobCUJ0kXwonOm
+
+# configuration for jccclient
+jccclient: ./config/jccclient.yaml
+
+# path for template
+tmplpath: ./cfg/tmpl
+
+# plugins
+plugins:
+  - alimama
+  - techinasia
+  - steepandcheap
+  - mountainsteals
+  - manhuadb
+  - douban
+  - jrj
+  - oabt
+  - hao6v
+  - p6vdy
+
+# configuration for plugins
+pluginscfg:
+  alimama: ./cfg/alimama.yaml
+  steepandcheap: ./cfg/steepandcheap.yaml
+
+# configuration for Ada
+ada:
+  servaddr: 47.91.209.141:7201
+  token: x7sSGGHgmKwUMoa5S4VZlr9bUF2lCCzF

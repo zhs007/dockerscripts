@@ -1,0 +1,48 @@
+appserv:
+  - type: telegram
+    token: <chatbot service token>
+    username: charles
+
+bindaddr: 127.0.0.1:7010
+
+dbpath: ./data
+dbengine: leveldb
+
+plugins:
+  - command
+
+pluginssecondline:
+  - debug
+  - fileproc  
+
+commands:
+  - help
+  - start
+  - reqtask
+
+# This is the text configuration used to reply to the start command
+# 这里的配置，用于默认的start指令返回
+starttext:
+  - start001
+  - start002
+
+# This is the text configuration used to reply to the help command
+# 这里的配置，用于默认的help指令返回
+helptext:
+  - help001
+  - help002
+
+# This is the text configuration for the robot name
+# 这里的配置，用于机器人的名字
+chatbotnametext: chatbotname
+
+language: en
+
+langpath: ./cfg/lang
+
+# path for task logs
+tasklogspath: ./tasklogs
+# Does it call initJieba
+isinitjieba: true
+# Does it call initOpenCC
+openccpath: ./cfg/opencc

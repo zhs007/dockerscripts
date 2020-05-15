@@ -1,0 +1,19 @@
+version: "2.0"
+
+services:
+  charleschatbot:
+    image: zerrozhao/charleschatbotex:latest
+    volumes:
+      - ./chatbot/config:/app/charleschatbot/config
+      - ./chatbot/data:/app/charleschatbot/data
+      - ./chatbot/tasklogs:/app/charleschatbot/tasklogs
+      - ./chatbot/logs:/app/charleschatbot/logs
+    restart: always
+  charlestelegram:
+    depends_on:
+      - charleschatbot
+    image: zerrozhao/telegrambot:latest
+    volumes:
+      - ./telegram/cfg:/app/telegrambot/cfg
+      - ./telegram/logs:/app/telegrambot/cfg
+    restart: always

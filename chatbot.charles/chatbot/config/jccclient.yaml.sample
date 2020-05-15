@@ -1,0 +1,23 @@
+# clients - array of the clients
+clients:
+  - servaddr: 127.0.0.1:7051
+    token: <token>
+    tags:
+      - localhost
+
+# maxmultifailtimes - If the client fail {{maxmultifailtimes}} times in succession, it need to ignore some task
+maxmultifailtimes: 3
+# effectivefailtime - If the interval between 2 failures is less than {{effectivefailtime}} seconds, it should be counted as a multiple failure.
+effectivefailtime: 180
+# ignoretasktime - The client will ignore the task for {{ignoretasktime}} seconds.
+ignoretasktime: 300
+# sleeptime - After the finished a task, rest for {{sleeptime}} seconds.
+sleeptime: 5
+
+# default mobile device
+defaultmobiledevice: iPhone X
+
+# database root path
+dbpath: ./data
+# database engine
+dbengine: leveldb
