@@ -3,7 +3,7 @@ appserv:
     token: <chatbot service token>
     username: charles
 
-bindaddr: 127.0.0.1:7010
+bindaddr: 0.0.0.0:7010
 
 dbpath: ./data
 dbengine: leveldb
