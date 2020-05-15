@@ -15,5 +15,5 @@ services:
     image: zerrozhao/telegrambot:latest
     volumes:
       - ./telegram/cfg:/app/telegrambot/cfg
-      - ./telegram/logs:/app/telegrambot/cfg
+      - ./telegram/logs:/app/telegrambot/logs
     restart: always
