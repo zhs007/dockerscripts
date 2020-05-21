@@ -3,6 +3,8 @@ version: "2.0"
 services:
   charleschatbot:
     image: zerrozhao/charleschatbotex:latest
+    ports:
+      - 7206:7206
     volumes:
       - ./chatbot/config:/app/charleschatbot/config
       - ./chatbot/data:/app/charleschatbot/data
