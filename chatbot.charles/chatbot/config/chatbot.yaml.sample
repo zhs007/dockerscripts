@@ -39,10 +39,3 @@ chatbotnametext: chatbotname
 language: en
 
 langpath: ./cfg/lang
-
-# path for task logs
-tasklogspath: ./tasklogs
-# Does it call initJieba
-isinitjieba: true
-# Does it call initOpenCC
-openccpath: ./cfg/opencc

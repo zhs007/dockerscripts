@@ -43,3 +43,12 @@ pluginscfg:
 ada:
   servaddr: 47.91.209.141:7201
   token: x7sSGGHgmKwUMoa5S4VZlr9bUF2lCCzF
+
+# path for task logs
+tasklogspath: ./tasklogs
+# Does it call initJieba
+isinitjieba: true
+# Does it call initOpenCC
+openccpath: ./cfg/opencc
+# api serv bind address
+apiserv: :7206
