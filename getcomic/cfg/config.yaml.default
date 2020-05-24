@@ -15,7 +15,7 @@ comicrootpath: ./comic
 # 是否输出pdf文件
 outputpdf: true
 # 是否发布到telegraph，如果要发布，则需要配置telegraph.yaml文件
-publishtelegraph: true
+publishtelegraph: false
 # telegraph配置文件
 telegraphconfig: ./cfg/telegraph.yaml
 # timeout - 60s
