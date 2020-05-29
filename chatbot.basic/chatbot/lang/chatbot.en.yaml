@@ -1,0 +1,30 @@
+chatbotname:
+  description: chatbot name
+  other: Ada
+help001:
+  description: help 001
+  other: I am {{.ChatBotName}}, nice to meet you.
+help002:
+  description: help 002
+  other: I can make a fancy report for you.
+help003:
+  description: help 003
+  other: You can send me a markdown or excel file.
+start001:
+  description: help 001
+  other: Hey, {{.Name}}, I am {{.ChatBotName}}, nice to meet you.
+start002:
+  description: help 002
+  other: I can make a fancy report for you.
+start003:
+  description: help 003
+  other: You can send me a markdown or excel file.
+igetit:
+  description: in debug
+  other: I get it.
+yousaid:
+  description: in debug
+  other: You said "{{.TextChat}}".
+igetfile:
+  description: in debug
+  other: I get a {{.FileType}} file ({{.FileName}}), the file size is {{.FileSize}}, the file hash is "{{.FileHash}}".

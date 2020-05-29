@@ -1,0 +1,21 @@
+version: "2.0"
+
+services:
+  basicchatbot:
+    image: zerrozhao/basicchatbot:latest
+    ports:
+      - 7206:7206
+    volumes:
+      - ./chatbot/cfg:/app/basicchatbot/cfg
+      - ./chatbot/data:/app/basicchatbot/data
+      - ./chatbot/lang:/app/basicchatbot/lang
+      - ./chatbot/logs:/app/basicchatbot/logs
+    restart: always
+  charlestelegram:
+    depends_on:
+      - basicchatbot
+    image: zerrozhao/telegrambot:latest
+    volumes:
+      - ./telegram/cfg:/app/telegrambot/cfg
+      - ./telegram/logs:/app/telegrambot/logs
+    restart: always
