@@ -11,7 +11,7 @@ services:
       - ./chatbot/lang:/app/basicchatbot/lang
       - ./chatbot/logs:/app/basicchatbot/logs
     restart: always
-  charlestelegram:
+  basictelegram:
     depends_on:
       - basicchatbot
     image: zerrozhao/telegrambot:latest

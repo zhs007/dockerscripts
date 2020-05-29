@@ -1,5 +1,5 @@
 telegramtoken: <telegram token>
 
 token: <chatbot service token>
-servaddr: charleschatbot:7010
+servaddr: basicchatbot:7010
 username: charles
