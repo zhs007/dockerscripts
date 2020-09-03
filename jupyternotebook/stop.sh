@@ -1,0 +1,2 @@
+docker stop jupyternotebook
+docker rm jupyternotebook
