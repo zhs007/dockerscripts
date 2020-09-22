@@ -1,0 +1,15 @@
+# batchcandlenums - batch candle nums
+batchcandlenums: 4096
+# dbpath - db path
+dbpath: ./data
+# dbengine - db engine
+dbengine: leveldb
+# bindaddr - grpc server bind address
+bindaddr: 0.0.0.0:5002
+# loglevel - log level
+loglevel: debug
+# logpath - log path
+logpath: ./logs
+# tokens - tokens
+tokens:
+  - wzDkh9h2fhfUVuS9jZ8uVbhV3vC5AWX3

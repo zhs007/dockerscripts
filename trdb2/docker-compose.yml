@@ -1,0 +1,20 @@
+version: "2.0"
+
+services:
+  trdb2chatbot:
+    image: zerrozhao/tradingdb2:latest
+    ports:
+      - 5002:5002
+    volumes:
+      - ./chatbot/cfg:/app/tradingdb2/cfg
+      - ./chatbot/data:/app/tradingdb2/data
+      - ./chatbot/logs:/app/tradingdb2/logs
+    restart: always
+  trdb2telegram:
+    depends_on:
+      - trdb2chatbot
+    image: zerrozhao/telegrambot:latest
+    volumes:
+      - ./telegram/cfg:/app/telegrambot/cfg
+      - ./telegram/logs:/app/telegrambot/logs
+    restart: always

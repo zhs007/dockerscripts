@@ -1,0 +1,5 @@
+telegramtoken: <telegram token>
+
+token: <chatbot service token>
+servaddr: trdb2chatbot:7010
+username: TradingDB2Bot
