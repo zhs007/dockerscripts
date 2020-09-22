@@ -29,7 +29,7 @@ tradingdb2servaddr: 127.0.0.1:5002
 tradingdb2token: 123456
 
 market: bitmex
-symbol: btc
+symbol: XBTUSD
 tags: ['202001']
 ```
 
