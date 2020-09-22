@@ -1,0 +1,8 @@
+# servaddr for tradingdb2
+tradingdb2servaddr: 127.0.0.1:5002
+# token for tradingdb2
+tradingdb2token: 123456
+
+market: bitmex
+symbol: btc
+tags: ['202001']

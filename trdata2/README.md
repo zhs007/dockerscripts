@@ -23,23 +23,14 @@ cp cfg/config.yaml.default cfg/config.yaml
 
 
 ``` yaml
-cnfundpath: ./data/cnfund
+# servaddr for tradingdb2
+tradingdb2servaddr: 127.0.0.1:5002
+# token for tradingdb2
+tradingdb2token: 123456
 
-exchanges:
-  - cnfund
-
-bindaddr: 0.0.0.0:3777
-# 同时运行的任务数，如果给0，表示是当前cpu数量，大于0且小于cpu数量时，就是实际允许的任务数
-# 小于0时，任务数是 cpunums - abs(tasknums)
-# -1表示空闲1个cpu
-tasknums: -1
-tokens:
-  - wzDkh9h2fhfUVuS9jZ8uVbhV3vC5AWX3
-
-servs:
-  - host: 0.0.0.0:3777
-    token: wzDkh9h2fhfUVuS9jZ8uVbhV3vC5AWX3
-
+market: bitmex
+symbol: btc
+tags: ['202001']
 ```
 
 ### Start
