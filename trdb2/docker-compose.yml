@@ -9,6 +9,7 @@ services:
       - ./chatbot/cfg:/app/tradingdb2/cfg
       - ./chatbot/data:/app/tradingdb2/data
       - ./chatbot/logs:/app/tradingdb2/logs
+      - ./chatbot/upload:/app/tradingdb2/upload
     restart: always
   trdb2telegram:
     depends_on:
