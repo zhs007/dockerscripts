@@ -18,6 +18,7 @@ pluginssecondline:
 commands:
   - help
   - start
+  - expalldata
 
 # This is the text configuration used to reply to the start command
 # 这里的配置，用于默认的start指令返回

@@ -13,3 +13,5 @@ logpath: ./logs
 # tokens - tokens
 tokens:
   - wzDkh9h2fhfUVuS9jZ8uVbhV3vC5AWX3
+datapath: ./output
+dataurl: http://127.0.0.1/  
