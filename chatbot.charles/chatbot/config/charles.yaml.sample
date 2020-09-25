@@ -52,3 +52,7 @@ isinitjieba: true
 openccpath: ./cfg/opencc
 # api serv bind address
 apiserv: :7206
+# tradingdb2 server address
+tradingdb2servaddr: 127.0.0.1:5002
+# tradingdb2 server token
+tradingdb2servtoken: 1234567
