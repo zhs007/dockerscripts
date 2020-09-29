@@ -3,6 +3,12 @@ tradingdb2servaddr: 127.0.0.1:5002
 # token for tradingdb2
 tradingdb2token: 123456
 
-market: bitmex
-symbol: XBTUSD
-tags: ['202001']
+tasks:
+  - market: bitmex
+    symbol: XBTUSD
+    tags: ["202001"]
+    timetype: 1m
+  - market: bitmex
+    symbol: XBTH20
+    tags: ["202001"]
+    timetype: 1m
