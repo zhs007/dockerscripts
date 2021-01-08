@@ -1,0 +1,61 @@
+# Docker for GetComic 
+
+### Install
+
+``` sh
+sh pull.sh
+```
+
+### Update
+
+``` sh
+sh pull.sh
+```
+
+### Configuration
+
+配置文件是 ``cfg/config.yaml`` .
+第一次启动，需要将例子配置文件复制改名一下。
+
+``` sh
+cp cfg/config.yaml.default cfg/config.yaml
+```
+
+``` yaml
+# 漫画源站
+source: manhuadb
+# 漫画id，如果是manhuadb，其实就是该漫画url最后的数字
+comicid: 545
+# 只下一册时用，给空就是全下
+bookid:
+# 有些漫画会分为港版台版甚至电子版等，这个是该漫画下载哪个类型，0表示第1个分类，-1表示全部下载
+roottype: 0
+# 打包多少本书到一个文件
+packagebooks: 1
+# 除非是图形环境，否则不要开启debug模式
+isdebug: false
+# 漫画输出目录
+comicrootpath: ./comic
+# 是否输出pdf文件
+outputpdf: true
+# 是否发布到telegraph，如果要发布，则需要配置telegraph.yaml文件
+publishtelegraph: true
+# telegraph配置文件
+telegraphconfig: ./cfg/telegraph.yaml
+# timeout - 60s
+timeout: 60000
+# 强制转换成png文件，部分站点jpg文件格式较奇怪，如果打包漫画出问题，建议强制转换为png下载。但强制转换png后，一般文件都会变大一些
+outputpng: false
+```
+
+### Start
+
+``` sh
+sh start.sh
+```
+
+### Stop & Delete
+
+``` sh
+sh stop.sh
+```
