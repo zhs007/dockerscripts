@@ -8,5 +8,5 @@ docker run -d \
   -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
   -e REGISTRY_HTTP_TLS_CERTIFICATE=/etc/letsencrypt/live/dockerhub.heyalgo.io/fullchain.pem \
   -e REGISTRY_HTTP_TLS_KEY=/etc/letsencrypt/live/dockerhub.heyalgo.io/privkey.pem \
-  -p 5001:443 \  
+  -p 5001:443 \
   registry:2
