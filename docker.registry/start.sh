@@ -1,6 +1,7 @@
 mkdir registry
+docker stop registry
+docker rm registry
 docker run -d \
-  --restart=always \
   --name registry \
   -v $PWD/registry:/var/lib/registry \
   -v /etc/letsencrypt:/etc/letsencrypt \
