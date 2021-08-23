@@ -1,2 +1,6 @@
 trc2/cfg/config.yaml
 trc2/logs
+mysql8/conf
+mysql8/data
+mysql/conf
+mysql/data

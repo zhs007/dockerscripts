@@ -1,1 +1,1 @@
-docker pull mysql:5
+docker pull mysql:8
