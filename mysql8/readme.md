@@ -12,5 +12,7 @@ docker exec -it mysql8 bash
 
 ```
 CREATE USER zhs007@'%' IDENTIFIED BY 'nebulaplay';
-grant all privileges on *.* to zhs007@"%" identified by "nebulaplay" with grant option;
+grant all privileges on *.* to zhs007@'%' with grant option;
+FLUSH PRIVILEGES;
+ALTER USER zhs007@'%' IDENTIFIED WITH mysql_native_password BY 'nebulaplay';
 ```
